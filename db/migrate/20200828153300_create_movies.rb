@@ -5,6 +5,8 @@ class CreateMovies < ActiveRecord::Migration[6.0]
       t.string :imdbID
       t.string :year
       t.string :poster
+
+      t.timestamps
     end
   end
 end
