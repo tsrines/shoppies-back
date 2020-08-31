@@ -1,6 +1,7 @@
 class NominationsController < ApplicationController
   def create
     nomination = Nomination.create(nomination_params)
+
     render json: nomination
   end
 
@@ -12,7 +13,6 @@ class NominationsController < ApplicationController
     nomination = Nomination.find_by(id: params[:id])
     render json: nomination
   end
-
 
   def destroy
     nomination = Nomination.find_by(id: params[:id])
